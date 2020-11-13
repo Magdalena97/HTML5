@@ -15,19 +15,20 @@
         //image's dimentions 
         const imageWidth =1100; 
         const imageHeight= 880; 
-        //current dimentions
+        //updated dimentions
         const viewportHeight = window.innerHeight; 
         const  viewportWidth= imageWidth * viewportHeight / imageHeight;
+        //alert(viewportWidth)
         document.documentElement.style.setProperty('--imageWidth', viewportWidth);
-        //alert(current_width)
+        //alert(viewportHeight)
         document.getElementById("ball").style.position = "absolute";
-        //set starting position 
+        //set  position 
         document.getElementById("ball").style.left = `${window.innerWidth/2 -20 - viewportWidth/2}px`;
         document.getElementById("ball").style.top = `${window.innerHeight/2 -26}px`
         document.getElementById("ball").style.transformOrigin = `${viewportWidth/2+15}px 22px`;
         
         document.getElementById("ball").style.animationName = "makeSpiral";
-        document.getElementById("ball").style.animationDuration = "10s";
+        document.getElementById("ball").style.animationDuration = "20s";
        
       }
   </script>

@@ -6,9 +6,9 @@ body{
     margin: 0;
     height: 100%;
     background-image: url("obrazek/wir.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #ball{
     height: 35px;
@@ -27,14 +27,14 @@ body{
 }
 @keyframes  makeSpiral {
     0%{
-        transform:rotate(0);
-        animation-timing-function: linear
+        animation-timing-function: linear;
+        transform:rotate(0);  
     }
     20%{
         transform: rotate(360deg) translate(calc(var(--imageWidth)/6*1px), 0px);
     }
     45%{
-        transform: rotate(720deg) translate(calc(var(--imageWidth)/6*1.5px), 0px);
+        transform: rotate(720deg) translate(calc(var(--imageWidth)/6*1.7px), 0px);
     }
     70% {
         transform: rotate(1080deg) translate(calc(var(--imageWidth)/6*2.20px), 0px);
