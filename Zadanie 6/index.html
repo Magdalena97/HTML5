@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+     <meta charset="utf-8">
+     <title>Zadanie 6</title>
+     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+     <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>  
+       <div id="ball"></div>  
+      <div id="rectangle"></div>
+     
+      <!-- <button class="btn default"onclick="make_move()"">Wprowadz w ruch</button> -->
+  </body> 
+  <script>
+      function make_move(){
+        //image's dimentions 
+        const imageWidth =1100; 
+        const imageHeight= 880; 
+        //updated dimentions
+        const viewportHeight = window.innerHeight; 
+        const  viewportWidth= imageWidth * viewportHeight / imageHeight;
+        //alert(viewportWidth)
+        document.documentElement.style.setProperty('--imageWidth', viewportWidth);
+        //alert(viewportHeight)
+        document.getElementById("ball").style.position = "absolute";
+        //set  position 
+        document.getElementById("ball").style.left = `${window.innerWidth/2 -20 - viewportWidth/2}px`;
+        document.getElementById("ball").style.top = `${window.innerHeight/2 -26}px`
+        document.getElementById("ball").style.transformOrigin = `${viewportWidth/2+15}px 22px`;
+        
+        document.getElementById("ball").style.animationName = "makeSpiral";
+        document.getElementById("ball").style.animationDuration = "20s";
+       
+      }
+  </script>
+</html>
