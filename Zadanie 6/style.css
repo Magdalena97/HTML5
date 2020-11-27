@@ -30,43 +30,41 @@ body{
     cursor: pointer; 
     
 } 
-#verticalMover{
+#moving_area{
     border-color: black;
-    /* position: absolute;  */
+    position: absolute;  
     background-color: pink; 
-    /* left: -50px;    */
+    left: -50px;  
 }
 
 @keyframes make_move {
 
-   
-
-    /* 0% {
+    0% {
         transform:translate(0px);
         animation-timing-function: linear
     }
-    15% {
-        transform:translateY(320px);
+    12% {
+        transform: translateY(320px);
         animation-timing-function: ease-out
     }
-    35% {
+    28% {
         transform:translateY(10px);
         animation-timing-function: ease-in
     }
-    65% {
+    48% {
         transform:translateY(320px);
         animation-timing-function: ease-out
     }
-    75% {
+    60% {
         transform:translateY(10px);
         animation-timing-function: ease-in
     }
-    87% {
+    80% {
         transform:translateY(320px);
         animation-timing-function: ease-out
     }
     100% {
         transform:translateY(10px);
         animation-timing-function: ease-in
-    }  */
+    }
 }
