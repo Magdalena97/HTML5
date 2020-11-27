@@ -6,14 +6,16 @@ body{
     margin: 0;
     height: 100%;   
 }
+#moving_area{
+    position:absolute;
+    border-color: black;
+    background-color: pink;      
+}
 #ball{
     height: 35px;
     width: 35px;
     background-color: blue;
     border-radius: 50%; 
-    /* margin-top:90px; */
-     /* display: inline-block;  */
-    /* position: absolute;  */
 } 
 #rectangle{
     width: 100%;
@@ -21,21 +23,13 @@ body{
     position: fixed;
     background-color: green; 
     bottom: 0
-    /* margin-top:456px; */
 }
 .btn{
     border: none;
     color: blue;
     padding: 6px 13px; 
-    cursor: pointer; 
-    
+    cursor: pointer;   
 } 
-#moving_area{
-    border-color: black;
-    position: absolute;  
-    background-color: pink; 
-    left: -50px;  
-}
 
 @keyframes make_move {
 
@@ -43,23 +37,23 @@ body{
         transform:translate(0px);
         animation-timing-function: linear
     }
-    12% {
+    14% {
         transform: translateY(320px);
         animation-timing-function: ease-out
     }
-    28% {
+    30% {
         transform:translateY(10px);
         animation-timing-function: ease-in
     }
-    48% {
+    45% {
         transform:translateY(320px);
         animation-timing-function: ease-out
     }
-    60% {
+    62% {
         transform:translateY(10px);
         animation-timing-function: ease-in
     }
-    80% {
+    79% {
         transform:translateY(320px);
         animation-timing-function: ease-out
     }

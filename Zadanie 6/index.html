@@ -26,7 +26,9 @@
         
         document.documentElement.style.setProperty('--imageWidth',width);
         document.getElementById("ball").style.position = "absolute";
+        document.getElementById("moving_area").style.transition ="transform 10s ease-in" 
         document.getElementById("moving_area").style.top = `${window.innerHeight/2 - 88}px`;
+        document.getElementById("moving_area").style.transform = `translateX(${window.innerWidth+70}px)`;
         document.getElementById("ball").style.animationName = "make_move";
         document.getElementById("ball").style.animationTimingFunction = "linear";
         document.getElementById("ball").style.animationDuration = "10s";
