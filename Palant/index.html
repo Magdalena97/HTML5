@@ -14,10 +14,30 @@
     <div id="stick"></div>
     <button class="btn default"onclick="make_move()">Wprowadz w ruch</button>  
     
-     
-  
   </body> 
   <script>
+     function make_move(){
+        // image's dimentions
+        const image_width = 100;
+        const image_height = 800;
+        //updated dimentions
+        let height; 
+        let width;
+        height = window.innerHeight;
+        width = image_width * height / image_height; 
+        
+        document.documentElement.style.setProperty('--imageWidth',width);
+        document.getElementById("ball").style.position = "absolute";
+        document.getElementById("moving_area").style.position = "absolute";
+        document.getElementById("moving_area").style.left = `100px`;
+        document.getElementById("moving_area").style.bottom = `200px`;
+        document.getElementById("moving_area").style.transition ="transform 10s linear" 
+        document.getElementById("moving_area").style.transform = `translateX(${window.innerWidth/2}px)`;
+        document.getElementById("ball").style.animationName = "make_move";
+        document.getElementById("ball").style.animationTimingFunction = "linear";
+        document.getElementById("ball").style.animationDuration = "10s";
+        document.getElementById("ball").style.animationDelay = "0s";
+      }
     
   </script>
 </html>
