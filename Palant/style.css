@@ -13,7 +13,7 @@ body{
     border-radius: 50%; 
 } 
 #moving_area{
-    background-color: black;
+    /* background-color: black; */
 }
 #person{
     width: 100px;
@@ -23,12 +23,13 @@ body{
     bottom: 0
 }
 #stick{
-    width: 50px;
-    height: 200px; 
+    width: 30px;
+    height: 250px; 
     position: fixed;
-    margin-left:1150px;
     background-color: brown; 
-    bottom: 0
+    bottom: 0;
+    left: 1100px;
+   
 }
 .btn{
     border: none;
@@ -43,7 +44,8 @@ body{
         animation-timing-function: ease-in;
     }
     100% {
-        transform:translateY(50px);
+        transform:translateX(50px);
         animation-timing-function: ease-in;
     }
 }
+
