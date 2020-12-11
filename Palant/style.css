@@ -13,7 +13,8 @@ body{
     border-radius: 50%; 
 } 
 #moving_area{
-    /* background-color: black; */
+    /* background-color: black; */ 
+    /* border-color: bisque; */
 }
 #person{
     width: 100px;
@@ -23,7 +24,7 @@ body{
     bottom: 0
 }
 #stick{
-    width: 30vh;
+    width: 33vh;
     height: 3vh;
     position: fixed;
     background-color: brown;
@@ -42,12 +43,13 @@ body{
         transform:translate(0px);
     }
     50% {
-        transform:translateX(calc(65vw)); 
+        transform:translateX(calc(68vw)); 
     }
     100% {
         transform:translateX(calc(-65vw));
     }
 }
+
 @keyframes make_move2 {
     0% {
         transform:translate(0px);
