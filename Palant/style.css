@@ -48,19 +48,15 @@ body{
         transform:translateX(calc(-65vw));
     }
 }
-
 @keyframes make_move2 {
     0% {
         transform:translate(0px);
-        animation-timing-function: ease-in;
     }
     50% {
-        transform:translateX(950px);
-        animation-timing-function: ease-in;
+        transform:translateY(40px);
     }
     100% {
-        transform:translateX(-900px);
-        animation-timing-function: ease-in;
+        transform:translateY(-200px);
     }
-}
+} 
 
