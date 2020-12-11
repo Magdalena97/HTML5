@@ -23,13 +23,12 @@ body{
     bottom: 0
 }
 #stick{
-    width: 30px;
-    height: 250px; 
+    width: 28vh;
+    height: 2vh;
     position: fixed;
-    background-color: brown; 
+    background-color: brown;
     bottom: 0;
     left: 1100px;
-   
 }
 .btn{
     border: none;
