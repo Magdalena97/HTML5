@@ -23,8 +23,8 @@ body{
     bottom: 0
 }
 #stick{
-    width: 28vh;
-    height: 2vh;
+    width: 30vh;
+    height: 3vh;
     position: fixed;
     background-color: brown;
     bottom: 0;
@@ -40,11 +40,12 @@ body{
 @keyframes make_move {
     0% {
         transform:translate(0px);
-        animation-timing-function: ease-in;
+    }
+    50% {
+        transform:translateX(calc(65vw)); 
     }
     100% {
-        transform:translateX(50px);
-        animation-timing-function: ease-in;
+        transform:translateX(calc(-65vw));
     }
 }
 
@@ -62,3 +63,4 @@ body{
         animation-timing-function: ease-in;
     }
 }
+
