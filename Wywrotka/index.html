@@ -8,49 +8,36 @@
   </head>
   <body> 
     <div id="moving_area">
-      <div id="wholeTruck">
+      <div id="my_truck">
         <div id="wheel_back"></div>
         <div id="wheel_front"></div>
         <div id="base_of_truck"></div>
         <div id="truck_cabin"></div>
         <div id="bottom_semitrailer"></div>
       <div id="box"></div>
-        
     </div>
   </div>  
     <button class="btn default"onclick="make_move()">Wprowadz w ruch</button>  
   </body> 
   <script>
      function make_move(){
-        // image's dimentions
-        const image_width = 100;
-        const image_height = 800;
-        //updated dimentions
-        let height; 
-        let width;
-        height = window.innerHeight;
-        width = image_width * height / image_height; 
+        // // image's dimentions
+        // const image_width = 100;
+        // const image_height = 800;
+        // //updated dimentions
+        // let height; 
+        // let width;
+        // height = window.innerHeight;
+        // width = image_width * height / image_height; 
         
-        document.documentElement.style.setProperty('--imageWidth',width);
-        document.getElementById("ball").style.position = "absolute";
-        document.getElementById("ball").style.animationName = "make_move2";
-        document.getElementById("ball").style.animationTimingFunction = "linear";
-       
-        document.getElementById("stick").style.transform = "rotate(-125deg)";
-        document.getElementById("stick").style.transformOrigin = "left";
-        document.getElementById("stick").style.transition = "transform 2s ease-in-out 1s";
+        // document.documentElement.style.setProperty('--imageWidth',width);4
+        // document.getElementById("my_truck").style.transition ="transform 5s ease-in-out"
+        //     document.getElementById("my_truck").style.transform = `translate(${window.innerWidth*3/4}px, -${window.innerHeight/2}px)`;
+      //MOVING FORWARD  
+        document.getElementById("my_truck").style.animationName = "movement_my_truck";
         
-       // document.getElementById("stick").style.transition = "transform 2s ease-in  ";
-
-        document.getElementById("moving_area").style.position = "absolute";
-        document.getElementById("moving_area").style.left = `100px`;
-        document.getElementById("moving_area").style.bottom = `200px`;
-        //document.getElementById("moving_area").style.transition ="transform"
-        document.getElementById("moving_area").style.animationName ="make_move";
-        document.getElementById("moving_area").style.animationTimingFunction = "linear";
-
-        document.getElementById("ball").style.animationDuration = "4s"; 
-        document.getElementById("moving_area").style.animationDuration = "4s"; 
+        document.getElementById("my_truck").style.animationDuration = "3s";
+      
 
       }
     

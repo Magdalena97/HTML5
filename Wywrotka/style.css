@@ -37,7 +37,13 @@ body{
     padding: 6px 13px; 
     cursor: pointer;   
 }  
-/* MY TRUCK */
+/* MY TRUCK */ 
+#my_truck {
+    position:absolute; 
+    bottom: 0px; 
+
+
+}
 #wheel_back {
     width: 50px;
     height: 50px;
@@ -92,28 +98,13 @@ body{
     bottom: 65px;
     left: 5vw;
 }
-
-@keyframes make_move {
+@keyframes movement_my_truck {
     0% {
-        transform:translate(0px);
+        transform: translateX(0px);
     }
     50% {
-        transform:translateX(calc(68vw)); 
-    }
-    100% {
-        transform:translateX(calc(-65vw));
+        transform: translateX(300px); rotate(0deg);   
+        
     }
 }
-
-@keyframes make_move2 {
-    0% {
-        transform:translate(0px);
-    }
-    50% {
-        transform:translateY(40px);
-    }
-    100% {
-        transform:translateY(-200px);
-    }
-} 
 
