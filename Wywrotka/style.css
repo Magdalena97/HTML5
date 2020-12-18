@@ -105,6 +105,9 @@ body{
     50% {
         transform: translateX(300px); rotate(0deg);   
         
+    } 
+    70% {
+        transform: translate(350px, -300px);
     }
 }
 
