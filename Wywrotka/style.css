@@ -36,7 +36,44 @@ body{
     color: blue;
     padding: 6px 13px; 
     cursor: pointer;   
+}  
+/* MY TRUCK */
+#wheel_back {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position:absolute;
+    bottom: 0;
+    left: 5vw;
+    border-radius: 50%;
 } 
+
+#wheel_front {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position:absolute;
+    bottom: 0;
+    left: 10vw;
+    border-radius: 50%;
+}
+#base_of_truck {
+    width: 165px;
+    height: 10px;
+    position: absolute;
+    background-color: black;
+    bottom: 50px;
+    left: 5vw;
+}
+
+#truck_cabin {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 50px;
+    bottom: 60px;
+    left: 12vw;
+}
 
 @keyframes make_move {
     0% {
