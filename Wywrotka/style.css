@@ -1,0 +1,64 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;   
+}
+#ball{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%; 
+} 
+#moving_area{
+    /* background-color: black; */ 
+    /* border-color: bisque; */
+}
+#person{
+    width: 100px;
+    height: 200px; 
+    position: fixed;
+    background-color: green; 
+    bottom: 0
+}
+#stick{
+    width: 33vh;
+    height: 3vh;
+    position: fixed;
+    background-color: brown;
+    bottom: 0;
+    left: 1100px;
+}
+.btn{
+    border: none;
+    color: blue;
+    padding: 6px 13px; 
+    cursor: pointer;   
+} 
+
+@keyframes make_move {
+    0% {
+        transform:translate(0px);
+    }
+    50% {
+        transform:translateX(calc(68vw)); 
+    }
+    100% {
+        transform:translateX(calc(-65vw));
+    }
+}
+
+@keyframes make_move2 {
+    0% {
+        transform:translate(0px);
+    }
+    50% {
+        transform:translateY(40px);
+    }
+    100% {
+        transform:translateY(-200px);
+    }
+} 
+
