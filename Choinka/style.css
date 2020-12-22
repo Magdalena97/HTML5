@@ -60,12 +60,16 @@ body{
     animation-delay: 4s;
     animation-fill-mode: forwards;
 }
-/* #moving_area2{
-   
-    background-color: burlywood; 
+#gwiazda{
+    height: 60px;
+    width: 60px;
     bottom: 0px;
+    margin-left: 1240px;
+    position: fixed;
+    animation: mymove5 3s; 
+    animation-delay: 4s;
     animation-fill-mode: forwards;
-} */
+}
 .btn{
     border: none;
     color: blue;
@@ -104,70 +108,28 @@ body{
         animation-timing-function: ease-in
     } 
 }
-
-/* @keyframes christmas_move {
-
-    0% {
-        transform:translate(0px);
-        animation-timing-function: linear
-    }
-    100% {
-        transform: translateY(-320px);
-        animation-timing-function: ease-out
-    }
-    /* 30% {
-        transform:translateY(10px);
-        animation-timing-function: ease-in
-    }
-    45% {
-        transform:translateY(320px);
-        animation-timing-function: ease-out
-    }
-    62% {
-        transform:translateY(10px);
-        animation-timing-function: ease-in
-    } 
-    79% {
-        transform:translateY(320px);
-        animation-timing-function: ease-out
-    }
-    100% {
-        transform:translateY(10px);
-        animation-timing-function: ease-in
-    }  
-} */
-
-
-/* @keyframes mymove {
-    from {bottom: 0px;}
-    to {bottom: 325px; }
-}
-@keyframes mymove2 {
-    from {bottom: 0px;}
-    to {bottom: 350px; }
-}
-@keyframes mymove3 {
-    from {bottom: 0px;}
-    to {bottom: 370px; }
-}
-@keyframes mymove4 {
-    from {bottom: 0px;}
-    to {bottom: 408px; }
-} */
-
+/* green */
 @keyframes mymove {
     from {bottom: 0px;margin-left:1336px}
-    to {bottom: 325px;  margin-left:1336px }
+    to {bottom: 340px;  margin-left:1336px }
 }
+/* red */
 @keyframes mymove2 {
     from {bottom: 0px;margin-left:1336px}
     to {bottom: 350px;margin-left: 1410px }
 }
+/* yellow */
 @keyframes mymove3 {
     from {bottom: 0px;margin-left:1336px}
-    to {bottom: 370px;margin-left:1388px }
+    to {bottom: 380px;margin-left:1388px }
 }
+/* pink */
 @keyframes mymove4 {
     from {bottom: 0px;margin-left:1336px}
-    to {bottom: 408px;margin-left: 1388px }
+    to {bottom: 410px;margin-left: 1388px }
+}
+/* gwiazda */
+@keyframes mymove5 {
+    from {bottom: 0px}
+    to {bottom: 420px }
 }
