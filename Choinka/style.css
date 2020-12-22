@@ -17,7 +17,7 @@ body{
     width: 20px;
     background-color: green;
     border-radius: 50%;  
-    margin-left: 1336px;  
+    /* margin-left: 1336px;   */
     bottom: 0px;
     position: fixed;
     animation: mymove 3s; 
@@ -29,7 +29,7 @@ body{
     width: 20px;
     background-color: red;
     border-radius: 50%;  
-    margin-left: 1410px;  
+    /* margin-left: 1410px;   */
     bottom: 0px;
     position: fixed;
     animation: mymove2 3s; 
@@ -41,10 +41,22 @@ body{
     width: 20px;
     background-color: yellow;
     border-radius: 50%;  
-    margin-left: 1435px;  
+    /* margin-left: 1388px;   */
     bottom: 0px;
     position: fixed;
-    animation: mymove 3s; 
+    animation: mymove3 3s; 
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+#christmas_ball4{
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+    border-radius: 50%;  
+    /* margin-left: 1388px;   */
+    bottom: 0px;
+    position: fixed;
+    animation: mymove4 3s; 
     animation-delay: 4s;
     animation-fill-mode: forwards;
 }
@@ -126,15 +138,36 @@ body{
 } */
 
 
-@keyframes mymove {
+/* @keyframes mymove {
     from {bottom: 0px;}
     to {bottom: 325px; }
 }
 @keyframes mymove2 {
     from {bottom: 0px;}
-    to {bottom: 390px; }
+    to {bottom: 350px; }
 }
 @keyframes mymove3 {
     from {bottom: 0px;}
-    to {bottom: 420px; }
+    to {bottom: 370px; }
+}
+@keyframes mymove4 {
+    from {bottom: 0px;}
+    to {bottom: 408px; }
+} */
+
+@keyframes mymove {
+    from {bottom: 0px;margin-left:1336px}
+    to {bottom: 325px;  margin-left:1336px }
+}
+@keyframes mymove2 {
+    from {bottom: 0px;margin-left:1336px}
+    to {bottom: 350px;margin-left: 1410px }
+}
+@keyframes mymove3 {
+    from {bottom: 0px;margin-left:1336px}
+    to {bottom: 370px;margin-left:1388px }
+}
+@keyframes mymove4 {
+    from {bottom: 0px;margin-left:1336px}
+    to {bottom: 408px;margin-left: 1388px }
 }
