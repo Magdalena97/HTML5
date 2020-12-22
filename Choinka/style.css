@@ -7,10 +7,7 @@ body{
     height: 100%;   
 }
 #ball{
-    /* height: 35px;
-    width: 35px;
-    background-color: blue;
-    border-radius: 50%;  */
+    
 } 
 #christmas_ball1{
     height: 20px;
@@ -64,7 +61,7 @@ body{
     height: 60px;
     width: 60px;
     bottom: 0px;
-    margin-left: 1240px;
+    /* margin-left: 1240px; */
     position: fixed;
     animation: mymove5 3s; 
     animation-delay: 4s;
@@ -130,6 +127,6 @@ body{
 }
 /* gwiazda */
 @keyframes mymove5 {
-    from {bottom: 0px}
-    to {bottom: 420px }
+    from {bottom: 0px; margin-left: 1000px;}
+    to {bottom: 420px ; margin-left: 1240px;}
 }
