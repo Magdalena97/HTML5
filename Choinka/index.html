@@ -1,3 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="pl">
+  <head>
+     <meta charset="utf-8">
+     <title>Zadanie 6</title>
+     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+     <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body> 
+    <div id="moving_area">
+      <div id="ball">
+        <img src="choinka.png"  width="128" height="128">
+      </div>
+    </div> 
+    <button class="btn default"onclick="make_move()">Wprowadz w ruch</button> 
+    <div id="moving_area">
+        <div id="christmas_ball"></div>
+    </div>
+  </body> 
+  <script>
+      function make_move(){
+        // image's dimentions
+        const image_width = 100;
+        const image_height = 800;
+        //updated dimentions
+        let height; 
+        let width;
+        height = window.innerHeight;
+        width = image_width * height / image_height; 
+        
+        document.documentElement.style.setProperty('--imageWidth',width);
+        document.getElementById("ball").style.position = "absolute";
+        // document.getElementById("christmas_ball").style.position = "absolute";
+        document.getElementById("moving_area").style.position = "absolute";
+        document.getElementById("moving_area").style.transition ="transform 4s ease-in" 
+        document.getElementById("moving_area").style.top = `${window.innerHeight/2 - 88}px`;
+        document.getElementById("moving_area").style.transform = `translateX(${window.innerWidth-200}px)`;
+
+        document.getElementById("moving_area2").style.position = "absolute";
+        document.getElementById("moving_area2").style.transition ="transform 4s ease-in" 
+        document.getElementById("moving_area2").style.top = `${window.innerHeight/2 - 88}px`;
+        document.getElementById("moving_area2").style.transform = `translateX(${window.innerWidth-200}px)`;
+        document.getElementById("christmas_ball").style.animationName = "spiral";
+        document.getElementById("christmas_ball").style.animationName = "make_move";
+        document.getElementById("christmas_ball").style.animationDuration = "4s";
+        document.getElementById("christmas_ball").style.animationDelay = "0s";
+
+        document.getElementById("ball").style.animationName = "spiral";
+        document.getElementById("ball").style.animationName = "make_move";
+        document.getElementById("ball").style.animationDuration = "4s";
+        document.getElementById("ball").style.animationDelay = "0s";
+      }
+  </script>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -12,7 +67,10 @@
       <img src="choinka.png"  width="128" height="128">
     </div>
     </div> 
-    <button class="btn default"onclick="make_move()">Wprowadz w ruch</button>  
+    <button class="btn default"onclick="make_move()">Wprowadz w ruch</button> 
+    <div id="moving_area2">
+        <div id="christmas_ball"></div>
+    </div> 
   </body> 
   <script>
       function make_move(){
@@ -29,12 +87,21 @@
         document.getElementById("ball").style.position = "absolute";
         document.getElementById("moving_area").style.position = "absolute";
         document.getElementById("moving_area").style.transition ="transform 4s ease-in" 
-        document.getElementById("moving_area").style.top = `${window.innerHeight/2 - 88}px`;
-        document.getElementById("moving_area").style.transform = `translateX(${window.innerWidth}px)`;
+        document.getElementById("moving_area").style.top = `${window.innerHeight/2 -88}px`;
+        document.getElementById("moving_area").style.transform = `translateX(${window.innerWidth -200}px)`;
         document.getElementById("ball").style.animationName = "spiral";
         document.getElementById("ball").style.animationName = "make_move";
         document.getElementById("ball").style.animationDuration = "4s";
         document.getElementById("ball").style.animationDelay = "0s";
+
+        document.getElementById("moving_area2").style.position = "absolute";
+        document.getElementById("moving_area2").style.transition ="transform 4s ease-in" 
+        document.getElementById("moving_area2").style.top = `${window.innerHeight -30}px`;
+        // document.getElementById("moving_area2").style.transform = `translateX(${window.innerWidth}px)`;
+
+        document.getElementById("christmas_ball").style.animationName = "christmas_move";
+        document.getElementById("christmas_ball").style.animationDuration = "4s";
+        document.getElementById("christmas_ball").style.animationDelay = "4s";
       }
   </script>
 </html>

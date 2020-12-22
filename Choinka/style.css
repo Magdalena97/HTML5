@@ -7,12 +7,25 @@ body{
     height: 100%;   
 }
 #ball{
-    height: 35px;
+    /* height: 35px;
     width: 35px;
     background-color: blue;
-    border-radius: 50%; 
+    border-radius: 50%;  */
 } 
-
+#christmas_ball{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%;  
+    margin-left: 1336px; 
+    
+    /* margin-top: 100%; */
+}
+#moving_area2{
+   
+    background-color: burlywood; 
+    bottom: 0px;
+}
 .btn{
     border: none;
     color: blue;
@@ -50,4 +63,36 @@ body{
         transform:translateY(10px);
         animation-timing-function: ease-in
     } 
+}
+
+@keyframes christmas_move {
+
+    0% {
+        transform:translate(0px);
+        animation-timing-function: linear
+    }
+    100% {
+        transform: translateY(-220px);
+        /* animation-timing-function: ease-out */
+    }
+    /* 30% {
+        transform:translateY(10px);
+        animation-timing-function: ease-in
+    }
+    45% {
+        transform:translateY(320px);
+        animation-timing-function: ease-out
+    }
+    62% {
+        transform:translateY(10px);
+        animation-timing-function: ease-in
+    } 
+    79% {
+        transform:translateY(320px);
+        animation-timing-function: ease-out
+    }
+    100% {
+        transform:translateY(10px);
+        animation-timing-function: ease-in
+    }  */
 }
