@@ -17,15 +17,25 @@ body{
     width: 20px;
     background-color: green;
     border-radius: 50%;  
-    margin-left: 1336px; 
+    margin-left: 1336px;  
+    bottom: 0px;
     
     /* margin-top: 100%; */
+
+
+    
+    /* position: relative; */
+    position: fixed;
+    animation: mymove 3s; 
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 }
-#moving_area2{
+/* #moving_area2{
    
     background-color: burlywood; 
     bottom: 0px;
-}
+    animation-fill-mode: forwards;
+} */
 .btn{
     border: none;
     color: blue;
@@ -65,15 +75,15 @@ body{
     } 
 }
 
-@keyframes christmas_move {
+/* @keyframes christmas_move {
 
     0% {
         transform:translate(0px);
         animation-timing-function: linear
     }
     100% {
-        transform: translateY(-220px);
-        /* animation-timing-function: ease-out */
+        transform: translateY(-320px);
+        animation-timing-function: ease-out
     }
     /* 30% {
         transform:translateY(10px);
@@ -94,5 +104,11 @@ body{
     100% {
         transform:translateY(10px);
         animation-timing-function: ease-in
-    }  */
-}
+    }  
+} */
+
+
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 320px; background-color: blue;}
+  }
