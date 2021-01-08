@@ -1,113 +1,96 @@
-html{
-    margin: 0;
-    height: 100%;
-}
-body{
-    margin: 0;
-    height: 100%;   
-}
-#ball{
-    height: 35px;
-    width: 35px;
-    background-color: blue;
-    border-radius: 50%; 
-} 
-#moving_area{
-    /* background-color: black; */ 
-    /* border-color: bisque; */
-}
-#person{
-    width: 100px;
-    height: 200px; 
-    position: fixed;
-    background-color: green; 
-    bottom: 0
-}
-#stick{
-    width: 33vh;
-    height: 3vh;
-    position: fixed;
-    background-color: brown;
-    bottom: 0;
-    left: 1100px;
-}
-.btn{
-    border: none;
-    color: blue;
-    padding: 6px 13px; 
-    cursor: pointer;   
-}  
-/* MY TRUCK */ 
-#my_truck {
-    position:absolute; 
-    bottom: 0px; 
-
-
-}
 #wheel_back {
     width: 50px;
     height: 50px;
-    background: blue;
-    position:absolute;
+    position: absolute;
+    background: brown;
     bottom: 0;
-    left: 5vw;
+    left: 0vw;
     border-radius: 50%;
-} 
+   
+}
 
 #wheel_front {
     width: 50px;
     height: 50px;
-    background: blue;
-    position:absolute;
     bottom: 0;
-    left: 10vw;
-    border-radius: 50%;
-}
-#base_of_truck {
-    width: 165px;
-    height: 10px;
-    position: absolute;
-    background-color: black;
-    bottom: 50px;
     left: 5vw;
+    border-radius: 50%;
+    position: absolute;
+    background: brown;
+   
 }
 
 #truck_cabin {
-    position: absolute;
+    width: 160px;
+    height: 15px;
     background-color: black;
-    width: 30px;
-    height: 50px;
-    bottom: 60px;
-    left: 12vw;
+    position: absolute;
+    bottom: 50px;
+    left: 0vw;
 }
 
-#bottom_semitrailer {
+#base_of_truck {
+    width: 40px;
+    height: 3vw;
+    background-color: black;
     position: absolute;
-    width: 135px;
-    height: 5px;
-    background-color: yellow;
-    bottom: 60px;
-    left: 5vw;
+    bottom: 65px;
+    left: 120px;
 }
 
 #box {
-    position: absolute;
     width: 80px;
     height: 20px;
-    background-color: purple;
+    background-color: yellow;
+    position: absolute;
     bottom: 65px;
-    left: 5vw;
-}
-@keyframes movement_my_truck {
+    left: 0.5vw;
+} 
+
+@keyframes my_truck_anim {
     0% {
         transform: translateX(0px);
     }
-    50% {
-        transform: translateX(300px); rotate(0deg);   
-        
-    } 
-    70% {
-        transform: translate(350px, -300px);
+    14% {
+        transform: translateX(calc(25vw)); 
+    }
+    28% {
+        transform: translate(calc(45vw), calc(-8vh));
+    }
+    42% {
+        transform: translate(calc(45vw), calc(-30vh)); 
+    }
+    58% {
+        transform: translate(calc(45w), calc(-40vh)); 
+    }
+    72% {
+        transform: translate(calc(20vw), calc(-40vh));
+    }
+    86% {
+        transform: translate(calc(20vw), calc(-40vh));
+    }
+    100% { 
+        transform: translate(calc(45vw), calc(-40vh));
     }
 }
 
+@keyframes take_box_off {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    47% {
+        transform: translateX(0px);
+    }
+    58% {
+        transform: translateX(0px);
+    }
+    82% {
+        transform: rotate(-65deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

@@ -1,32 +1,40 @@
-<!DOCTYPE html>
-<html lang="pl">
-  <head>
-     <meta charset="utf-8">
-     <title>Wywrotka</title>
-     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-     <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body> 
-    <div id="moving_area">
-      <div id="my_truck">
-        <div id="wheel_back"></div>
-        <div id="wheel_front"></div>
-        <div id="base_of_truck"></div>
-        <div id="truck_cabin"></div>
-        <div id="bottom_semitrailer"></div>
-      <div id="box"></div>
-    </div>
-  </div>  
-    <button class="btn default"onclick="make_move()">Wprowadz w ruch</button>  
-  </body> 
-  <script>
-     function make_move(){
-      //MOVING FORWARD  
-        document.getElementById("my_truck").style.animationName = "movement_my_truck";
-        document.getElementById("my_truck").style.animationDuration = "3s";
-      
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie z wywrotką</title>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="moving_area" style="position: absolute; bottom: 0; left: 0vw;">
+        <div id="my_truck" style="position: absolute; bottom: 0; left: 10vw;">
+            <div id="wheel_back"></div>
+            <div id="wheel_front"></div>
+            <div id="base_of_truck"></div>
+            <div id="truck_cabin"></div>
+            <div id="bottom_semitrailer">
+                <div id="box"></div>
+            </div>
+        </div>
+    </div> 
+    <button onclick='make_move();'>Wprowadz w ruch</button>
+    <script>
+        function make_move() {
+            
+            document.getElementById("moving_area").style.animationName = "my_truck_anim";
+            document.getElementById("moving_area").style.animationTimingFunction = "linear";
+            document.getElementById("moving_area").style.animationFillMode = "forwards";
+            document.getElementById("moving_area").style.animationDuration = "2.5s";
+            document.getElementById("moving_area").style.animationDelay = "0s";
 
-      }
-    
-  </script>
+            document.getElementById("bottom_semitrailer").style.animationName = "take_box_off";
+            document.getElementById("bottom_semitrailer").style.animationFillMode = "forwards";
+            document.getElementById("bottom_semitrailer").style.animationDuration = "2.5s";
+            document.getElementById("bottom_semitrailer").style.animationDelay = "0s";
+
+            
+            
+        }
+    </script>
+</body>
 </html>
