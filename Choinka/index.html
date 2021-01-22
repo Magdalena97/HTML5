@@ -48,3 +48,18 @@
       }
   </script>
 </html>
+
+
+
+
+
+<script>
+  function doKoszyka(bananID) {
+      const polozenie = document.getElementById(bananID).getBoundingClientRect();
+      document.getElementById(bananID).style.top = `${polozenie.top}px`;
+      document.getElementById(bananID).style.left = `${polozenie.left}px`;
+      document.getElementById(bananID).style.animationName = "doKoszyka";
+      document.getElementById(bananID).style.animationTimingFunction = "linear";
+      document.getElementById(bananID).style.animationDuration = "5s";
+  }
+</script>
